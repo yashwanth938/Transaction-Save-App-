@@ -71,6 +71,7 @@ flutter:
       fonts:
         - asset: assets/fonts/Quicksand-Regular.ttf
         - asset: assets/fonts/Quicksand-Bold.ttf
+        - asset: assets/fonts/
           weight: 700
   #   - family: Trajan Pro
   #     fonts:
