@@ -18,7 +18,12 @@ class TransactionList extends StatelessWidget {
                 children: <Widget>[
                   Text(
                     'No transactions added yet!',
-                    style: Theme.of(context).textTheme.title,
+                    style: TextStyle(
+                      fontFamily: 'Quicksand',
+                      fontWeight: FontWeight.normal,
+                      fontSize: 18,
+                    ),
+                    //style: Theme.of(context).textTheme.headline6,
                   ),
                   SizedBox(
                     height: 20,
@@ -26,7 +31,7 @@ class TransactionList extends StatelessWidget {
                   Container(
                     height: constraints.maxHeight * 0.6,
                     child: Image.asset(
-                      'assets/images/Think12.png',
+                      'assets/images/Think1.png',
                       fit: BoxFit.contain,
                     ),
                   ),
@@ -54,7 +59,7 @@ class TransactionList extends StatelessWidget {
                   ),
                   title: Text(
                     transactions[index].title,
-                    style: Theme.of(context).textTheme.title,
+                    style: Theme.of(context).textTheme.headline6,
                   ),
                   subtitle: Text(
                     DateFormat.yMMMd().format(transactions[index].date),
